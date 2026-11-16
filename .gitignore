@@ -1,0 +1,36 @@
+﻿# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Backups
+backup*/
+*BACKUP*
+*_BACKUP_*
+*.bak
+
+# Temporary files and archives
+*.zip
+*.tmp
+*.log
+
+# Local configuration
+.env
+.env.*
+.vscode/
+.idea/
+
+# Operating system files
+Thumbs.db
+.DS_Store
+
+# Duplicate notebook and model files
+notebooks/Skin_Disorder_Prediction_BEFORE_OUTPUT_REFRESH.ipynb
+notebooks/Skin_Disorder_Prediction_Reviewed.ipynb
+notebooks/models/
+
+# Duplicate generated reports
+notebooks/reports/

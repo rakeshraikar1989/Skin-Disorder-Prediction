@@ -1,0 +1,4 @@
+Actual Disease,Predicted Disease,Error Count
+Seborrheic dermatitis,Pityriasis rosea,2
+Lichen planus,Chronic dermatitis,1
+Seborrheic dermatitis,Pityriasis rubra pilaris,1

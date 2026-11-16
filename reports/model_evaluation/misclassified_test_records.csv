@@ -1,0 +1,5 @@
+,Actual Class,Predicted Class,Actual Disease,Predicted Disease,Correct
+28,2,6,Seborrheic dermatitis,Pityriasis rubra pilaris,False
+143,3,5,Lichen planus,Chronic dermatitis,False
+140,2,4,Seborrheic dermatitis,Pityriasis rosea,False
+43,2,4,Seborrheic dermatitis,Pityriasis rosea,False

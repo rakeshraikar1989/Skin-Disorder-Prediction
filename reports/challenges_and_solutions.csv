@@ -1,0 +1,9 @@
+Challenge,Evidence,Approach,Limitation
+Small dataset,366 records across six classes.,Use stratified partitions and cross-validation; report uncertainty and avoid claiming broad generalisation.,Performance may change substantially on new populations.
+Class imbalance,The largest class has 112 records and the smallest has 20.,"Use macro-averaged metrics, balanced accuracy, stratified validation and class weighting where supported.",Rare-class estimates remain uncertain because few examples are available.
+Missing age values,Eight missing Age values.,Use median imputation inside the model pipeline so imputation is learned only from each training fold.,Imputation does not recover the true age and may reduce information.
+Age value of zero,One record contains Age = 0.,Retain it pending clarification; do not silently replace or delete it.,The source does not establish whether this value is valid.
+Correlated predictors,Several predictor pairs show strong Spearman correlations.,Inspect correlations and use model-based evaluation rather than automatically deleting features.,Correlated features can complicate individual feature-importance interpretation.
+Sparse predictors,Some clinical and histopathological attributes are zero for most records.,Retain potentially informative rare findings and evaluate their contribution.,Rare values may be difficult to estimate reliably with a small dataset.
+Medical application risk,"The dataset is a limited historical classification dataset, not a prospective clinical trial.",Frame the result as an educational prototype and require clinician oversight.,"No clinical safety, fairness or deployment validation has been established."
+Model generalisation,A single small holdout set provides limited evidence.,Use stratified cross-validation on training data and keep the test set untouched during model selection.,External validation on independent data is still required.
